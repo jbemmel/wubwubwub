@@ -8,7 +8,7 @@
 var isPlaying = false;
 var sourceNode = null;
 var theBuffer = null;
-var audioContext = new webkitAudioContext;
+var audioContext = new AudioContext(); // webkitAudioContext;
 
 var request = new XMLHttpRequest();
 request.open("GET", "sounds/drums.ogg", true);
